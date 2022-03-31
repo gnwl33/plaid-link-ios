@@ -20,6 +20,9 @@ extension ViewController {
         // With custom configuration using a link_token
         var linkConfiguration = LinkTokenConfiguration(token: linkToken) { success in
             print("public-token: \(success.publicToken) metadata: \(success.metadata)")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Balances") as! BalancesViewController
+            vc.publicToken = success.publicToken
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         linkConfiguration.onExit = { exit in
             if let error = exit.error {

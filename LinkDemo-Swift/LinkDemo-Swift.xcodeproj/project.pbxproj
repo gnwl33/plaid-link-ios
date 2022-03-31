@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0949F2A127F4C1E800D42D7E /* BalancesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0949F2A027F4C1E800D42D7E /* BalancesManager.swift */; };
+		0949F2A527F4C20000D42D7E /* BalancesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0949F2A427F4C20000D42D7E /* BalancesModel.swift */; };
+		0967A56227F4BE3C00EBDC1E /* BalancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967A56127F4BE3C00EBDC1E /* BalancesViewController.swift */; };
 		7A92F55A25BF3CF800009CFD /* LinkKitSwiftUISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A92F55925BF3CF800009CFD /* LinkKitSwiftUISupport.swift */; };
 		7A92F55E25BF40FB00009CFD /* ViewController+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A92F55D25BF40FB00009CFD /* ViewController+SwiftUI.swift */; };
 		91035E531E3CA7C000A97B26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91035E521E3CA7C000A97B26 /* AppDelegate.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0949F2A027F4C1E800D42D7E /* BalancesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancesManager.swift; sourceTree = "<group>"; };
+		0949F2A427F4C20000D42D7E /* BalancesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancesModel.swift; sourceTree = "<group>"; };
+		0967A56127F4BE3C00EBDC1E /* BalancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancesViewController.swift; sourceTree = "<group>"; };
 		7A92F55925BF3CF800009CFD /* LinkKitSwiftUISupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkKitSwiftUISupport.swift; sourceTree = "<group>"; };
 		7A92F55D25BF40FB00009CFD /* ViewController+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SwiftUI.swift"; sourceTree = "<group>"; };
 		91035E4F1E3CA7C000A97B26 /* LinkDemo-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LinkDemo-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0949F29F27F4C16D00D42D7E /* Balances */ = {
+			isa = PBXGroup;
+			children = (
+				0967A56127F4BE3C00EBDC1E /* BalancesViewController.swift */,
+				0949F2A027F4C1E800D42D7E /* BalancesManager.swift */,
+				0949F2A427F4C20000D42D7E /* BalancesModel.swift */,
+			);
+			path = Balances;
+			sourceTree = "<group>";
+		};
 		91035E461E3CA7C000A97B26 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +100,7 @@
 		91035E511E3CA7C000A97B26 /* LinkDemo-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				0949F29F27F4C16D00D42D7E /* Balances */,
 				91648DDD24A47EF3002BED1F /* LinkDemo-Swift.entitlements */,
 				91035E521E3CA7C000A97B26 /* AppDelegate.swift */,
 				91974B0A246D6D4200182D9B /* AppDelegate+OAuthSupport.swift */,
@@ -185,10 +202,13 @@
 				91035E551E3CA7C000A97B26 /* ViewController.swift in Sources */,
 				913AF7CA251D3C04007CC064 /* ViewController+PublicKey.swift in Sources */,
 				91974B0B246D6D4200182D9B /* AppDelegate+OAuthSupport.swift in Sources */,
+				0967A56227F4BE3C00EBDC1E /* BalancesViewController.swift in Sources */,
 				7A92F55E25BF40FB00009CFD /* ViewController+SwiftUI.swift in Sources */,
+				0949F2A127F4C1E800D42D7E /* BalancesManager.swift in Sources */,
 				7A92F55A25BF3CF800009CFD /* LinkKitSwiftUISupport.swift in Sources */,
 				91035E531E3CA7C000A97B26 /* AppDelegate.swift in Sources */,
 				91BB7745246D50C800BFD0CE /* ViewController+LinkToken.swift in Sources */,
+				0949F2A527F4C20000D42D7E /* BalancesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
